@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UC\\Web Server App Dev Spring 2021\\FinalProject\\FinalProject\\WebServerFinalProject\\GuitarShop\\BeerPlaces.csproj": {}
+    "C:\\Users\\mrpal\\Source\\Repos\\sandhups\\WebServerFinalProject\\GuitarShop\\BeerPlaces.csproj": {}
   },
   "projects": {
-    "D:\\UC\\Web Server App Dev Spring 2021\\FinalProject\\FinalProject\\WebServerFinalProject\\GuitarShop\\BeerPlaces.csproj": {
+    "C:\\Users\\mrpal\\Source\\Repos\\sandhups\\WebServerFinalProject\\GuitarShop\\BeerPlaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UC\\Web Server App Dev Spring 2021\\FinalProject\\FinalProject\\WebServerFinalProject\\GuitarShop\\BeerPlaces.csproj",
+        "projectUniqueName": "C:\\Users\\mrpal\\Source\\Repos\\sandhups\\WebServerFinalProject\\GuitarShop\\BeerPlaces.csproj",
         "projectName": "BeerPlaces",
-        "projectPath": "D:\\UC\\Web Server App Dev Spring 2021\\FinalProject\\FinalProject\\WebServerFinalProject\\GuitarShop\\BeerPlaces.csproj",
-        "packagesPath": "C:\\Users\\param\\.nuget\\packages\\",
-        "outputPath": "D:\\UC\\Web Server App Dev Spring 2021\\FinalProject\\FinalProject\\WebServerFinalProject\\GuitarShop\\obj\\",
+        "projectPath": "C:\\Users\\mrpal\\Source\\Repos\\sandhups\\WebServerFinalProject\\GuitarShop\\BeerPlaces.csproj",
+        "packagesPath": "C:\\Users\\mrpal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mrpal\\Source\\Repos\\sandhups\\WebServerFinalProject\\GuitarShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\param\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mrpal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
