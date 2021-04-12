@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace BeerPlaces.Controllers
 {
-    public class HomeController: Controller
+    public class DrinkController : Controller
     {
-        public IActionResult Index() { 
-            return View();
-        }
-
-        [Route("[action]")]
-        public IActionResult About()
+        public IActionResult Index()
         {
             return View();
         }

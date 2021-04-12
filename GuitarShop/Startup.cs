@@ -2,9 +2,9 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using GuitarShop.Models;
+using BeerPlaces.Models;
 
-namespace GuitarShop
+namespace BeerPlaces
 {
     public class Startup
     {
@@ -20,9 +20,9 @@ namespace GuitarShop
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<ShopContext>(
+            services.AddDbContext<DrinkFinderContext>(
                 options => options.UseSqlServer(
-                    Configuration.GetConnectionString("ShopContext")));
+                    Configuration.GetConnectionString("DrinkFinderContext")));
         }
 
         // Use this method to configure the HTTP request pipeline.
