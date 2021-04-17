@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Bar>
+@{
+    ViewData["Title"] = "Bar";
+}
+
+<h2>Bars</h2>
+
+<a asp-action="Add" asp-controller="Bar"  class="btn btn-success mb-1">Add</a>
+<table class="table table-bordered table sm">
+    <thead class="thead-dark">
+        <tr>
+            <th>Bar</th>
+            <th>Address</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Bar bar in Model)
+        {
+            <tr>
+                <td>
+                    @bar.Name
+                </td>
+                <td>
+                    @bar.Address @bar.State @bar.Zip 
+                </td>
+                <td>
+                   <a asp-action="Delete" asp-route-id="@bar.Id"
+                       class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
