@@ -1,0 +1,27 @@
+﻿@model Drink
+@{
+    ViewData["Title"] = "addDrink";
+}
+
+<h2>Add Your Drink Here</h2>
+
+<form asp-controller="Drink" method="post" style="border: 1px black">
+    <div class="form-row">
+        <div class="form-group">
+            <label asp-for="Name">Drink</label>
+            <input asp-for="Name" class="form-control mr-1" />
+        </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label asp-for="Price" class="ml-1">Price</label>
+                <input asp-for="Price" class="form-control" />
+            </div>
+        </div>
+
+
+
+    <button type="submit" class="btn btn-success">Submit</button>
+    <a asp-action="Drink" asp-controller="Drink" class="btn btn-outline-dark">Cancel</a>
+</form>
+   
