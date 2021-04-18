@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Drink>
+
+@{ ViewBag.Title = "Home";
+    int id = Convert.ToInt32(ViewContext.RouteData.Values["id"]); }
+
+<h1>Welcome to Drink Finder!</h1>
+
+<p>Were drink enthusiasts/hoobyist who love sharing our favorite drinks and where they can be found.
+   Select the search to explore the drinks we have found across Cincinnati. Additionally, Add your own drinks to our list. We are always
+   looking for new drinks to try. 
+</p>
+
+<img src="/assets/Beer.jpg" />
+

@@ -1,0 +1,34 @@
+﻿@model Drink
+
+@{
+    ViewData["Title"] = $"{ViewBag.Title} Drink";
+}
+
+<h1 class="display-4">@ViewBag.Operation Drink</h1>
+
+<form asp-action="Add" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Category"></label>
+        <select asp-for="CategoryId" class="form-control"
+                asp-items="@(new SelectList(ViewBag.Categories,"Id","Name"))"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Bar"></label>
+        <select asp-for="BarId" class="form-control"
+                asp-items="@(new SelectList(ViewBag.Bars,"Id","Name"))"></select>
+    </div>
+
+
+
+    <button type="submit" class="btn btn-dark">Save</button>
+    <a asp-action="Index" asp-controller="Home" class="btn btn-outline-dark">Cancel</a>
+</form>
