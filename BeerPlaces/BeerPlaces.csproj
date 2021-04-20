@@ -7,9 +7,21 @@
 
   <ItemGroup>
     <Compile Remove="Areas\**" />
+    <Compile Remove="Assets\**" />
+    <Compile Remove="Views\About\**" />
+    <Compile Remove="wwwroot\css\NewFolder\**" />
     <Content Remove="Areas\**" />
+    <Content Remove="Assets\**" />
+    <Content Remove="Views\About\**" />
+    <Content Remove="wwwroot\css\NewFolder\**" />
     <EmbeddedResource Remove="Areas\**" />
+    <EmbeddedResource Remove="Assets\**" />
+    <EmbeddedResource Remove="Views\About\**" />
+    <EmbeddedResource Remove="wwwroot\css\NewFolder\**" />
     <None Remove="Areas\**" />
+    <None Remove="Assets\**" />
+    <None Remove="Views\About\**" />
+    <None Remove="wwwroot\css\NewFolder\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,11 +32,6 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Assets\" />
-    <Folder Include="Views\About\" />
   </ItemGroup>
 
   <ItemGroup>
