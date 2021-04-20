@@ -10,6 +10,13 @@ namespace BeerPlaces.Controllers
 {
     public class HomeController: Controller
     {
+
+        [Route("[action]")]
+        public IActionResult About()
+        {
+            return View();
+        }
+
         private Repository<Drink> drinks { get; set; }
               public HomeController(DrinkContext ctx) => drinks = new Repository<Drink>(ctx);
         
