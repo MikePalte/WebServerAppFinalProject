@@ -21,7 +21,8 @@ namespace BeerPlaces.Controllers
         {
             var options = new QueryOptions<Drink>
             {
-                OrderBy = c => c.Id
+                OrderBy = c => c.Id,
+                Includes = "Category, Bar"
             };
             return View(data.Drink.List(options));
         }
